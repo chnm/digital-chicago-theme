@@ -439,6 +439,7 @@ footer {
 #sidebar h5 {
     border-bottom: 1px solid #AAA3A2;
     margin:0;
+    margin-bottom:.35rem;
 }
 
 #exhibit-pages ul {
@@ -478,10 +479,6 @@ footer {
 
 #related-exhibits a:hover {
     background-color: #DCC67A;
-}
-
-#related-exhibits p {
-    padding-top:.35rem;
 }
 
 /*ABOUT PAGE*/
