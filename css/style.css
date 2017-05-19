@@ -69,6 +69,7 @@ img a {
     display:block;
     margin:auto;
     margin-bottom: 1rem;
+    width:75%;
 }
 
 .circle img {
@@ -84,7 +85,7 @@ img a {
 footer {
     border-top: 0.75rem solid #DCC67A;
     margin-top:1rem;
-    padding-top:1rem;
+    padding:1rem 0;
 }
 
 #skipnav {

@@ -3,16 +3,19 @@
 <footer role="contentinfo" class="row">
 
     <div id="footer-content" class="center-div">
-        <?php if($footerText = get_theme_option('Footer Text')): ?>
-        <div id="custom-footer-text">
-            <p><?php echo get_theme_option('Footer Text'); ?></p>
+        <div class="footer-text large-7 column">
+            <?php if($footerText = get_theme_option('Footer Text')): ?>
+            <div id="custom-footer-text">
+                <p><?php echo get_theme_option('Footer Text'); ?></p>
+            </div>
+            <?php endif; ?>
         </div>
-        <?php endif; ?>
-        <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
-        <p><?php echo $copyright; ?></p>
-        <?php endif; ?>
-        <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
-        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
+
+        <div class="logos large-5 column">
+            <a href="http://www.lakeforest.edu/"><img class="large-3 column float-right" src="<?php echo img('logo@2x.png', $dir='img'); ?>" alt="Logo for Lake Forest College"></a>
+            <a href="https://mellon.org/"><img class="large-5 column float-right" src="<?php echo img('mellon-logo.svg', $dir='img'); ?>" alt="Logo for the Mellon Foundation"></a>
+        </div>
+
 
     </div><!-- end footer-content -->
 
