@@ -46,7 +46,7 @@
                 <?php 
                     $navArray = array();
                     $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits'), 'class' => 'exhibits nav-item');
-                    $navArray[] = array('label' => '', 'uri' => url('index'), 'class' => 'home nav-item');
+                    $navArray[] = array('label' => '', 'uri' => url('index'), 'class' => 'home nav-item hide-for-small-only');
                     $navArray[] = array('label' => 'About', 'uri' => url('about'), 'class' => 'about nav-item');
                 ?>
                 <?php

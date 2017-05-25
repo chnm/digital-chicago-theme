@@ -10,21 +10,25 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 <?php $tags = get_records('Tag', array('type'=>'exhibit' )); ?>
 <?php echo classed_tag_cloud($tags, 'exhibits/browse'); ?>
 </div>
-<div class="large-up-4">
+<div class="exhibits">
     <?php if (count($exhibits) > 0): ?>
     <?php $exhibitCount = 0; ?>
     <?php foreach (loop('exhibit') as $exhibit): ?>
         <?php $exhibitCount++; ?>
-        <div class="exhibit large-3 column column-block">
+        <div class="row exhibit-row">
             <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail')): ?>
-                <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => ' circle')); ?>
+                <div class="large-3 column">
+                    <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => ' circle')); ?>
+                </div>           
             <?php endif; ?>
-
-            <h2><?php echo link_to_exhibit(); ?></h2>
             
-            <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true, 'snippet' => 150))): ?>
-                <div class="description"><?php echo $exhibitDescription; ?></div>
-            <?php endif; ?>
+            <div class="large-9 column">
+                <h2><?php echo link_to_exhibit(); ?></h2>
+            
+                <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true, 'snippet' => 300))): ?>
+                    <div class="description"><?php echo $exhibitDescription; ?></div>
+                <?php endif; ?>
+            </div>
         </div>
     <?php endforeach; ?>
 

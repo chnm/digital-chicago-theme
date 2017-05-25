@@ -44,7 +44,7 @@
 
              <div id="primary-nav" role="navigation" class="top-bar">
                  <div class="top-bar-left ">
-                   <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('DC_logo_light.png', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
+                   <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('dc_logo_lfc_long.png', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
                    <a href="<?php echo url(''); ?>" class="show-for-small-only home-link">Home</a>
                 </div>
 

@@ -12,8 +12,8 @@
         </div>
 
         <div class="logos large-5 column">
-            <a href="http://www.lakeforest.edu/"><img class="large-3 column float-right" src="<?php echo img('logo@2x.png', $dir='img'); ?>" alt="Logo for Lake Forest College"></a>
-            <a href="https://mellon.org/"><img class="large-5 column float-right" src="<?php echo img('mellon-logo.svg', $dir='img'); ?>" alt="Logo for the Mellon Foundation"></a>
+            <a href="http://www.lakeforest.edu/"><img class="large-3 small-6 column float-right" src="<?php echo img('logo@2x.png', $dir='img'); ?>" alt="Logo for Lake Forest College"></a>
+            <a href="https://mellon.org/"><img class="large-5 small-6 column float-right" src="<?php echo img('mellon-logo.svg', $dir='img'); ?>" alt="Logo for the Mellon Foundation"></a>
         </div>
 
 
