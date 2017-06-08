@@ -2,8 +2,6 @@
 $title = __('Browse Exhibits');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
-<h1>Explore</h1>
-
 <p class="orientation large-10 large-offset-1 columns show-for-medium">Explore our exhibits. Use the tags below to filter them by subject</p>
 
 <div class="tag-cloud align-spaced show-for-medium">

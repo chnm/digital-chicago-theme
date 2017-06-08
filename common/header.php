@@ -34,7 +34,7 @@
  <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-        <header class="row" role="banner">
+        <header role="banner">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
             <div class="title-bar" data-responsive-toggle="primary-nav" data-hide-for="medium">
@@ -42,7 +42,7 @@
                 <div class="title-bar-title">Menu</div>
             </div>
 
-             <div id="primary-nav" role="navigation" class="top-bar">
+             <div id="primary-nav" class="row" role="navigation" class="top-bar">
                  <div class="top-bar-left ">
                    <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('dc_logo_lfc_long.png', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
                    <a href="<?php echo url(''); ?>" class="show-for-small-only home-link">Home</a>
@@ -54,7 +54,7 @@
                         $navArray[] = array('label' => 'About', 'uri' => url('about'), 'class' => 'about nav-item');
                         $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits'), 'class' => 'exhibits nav-item');
                                             ?>
-                    <?php echo nav($navArray)->addPageClassToLi()->setUlClass('vertical medium-horizontal menu align-self-bottom')->setUlId('right-nav'); ?>
+                    <?php echo nav($navArray)->addPageClassToLi()->setUlClass('vertical medium-horizontal menu large-5 column')->setUlId('right-nav'); ?>
                  
 
                     <div id="search-container" role="search" class="large-7 column right align-self-bottom">
