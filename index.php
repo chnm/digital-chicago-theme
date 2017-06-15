@@ -60,39 +60,21 @@
 
 
 <div id="primary">
-    <!-- Featured Exhibit -->
-    <?php $exhibits = get_records('Exhibit', array('featured' => 1, 'sort_field' => 'random'), 3); ?>
-    <?php foreach($exhibits as $exhibit): ?>
-        <div class="large-4 columns featured-exhibit">
-                <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'circle'))): ?>
-                    <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage); ?>
-                <?php endif; ?>
-
-            <?php echo exhibit_builder_link_to_exhibit($exhibit,$exhibit->title, array('class' => 'featured-title')); ?>
-            <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true, 'snippet' => 150))): ?>
-                <!-- <div class="description"><?php echo $exhibitDescription; ?></div> -->
-            <?php endif; ?>       
-        </div>
-    <?php endforeach; ?>
 
     <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
         <p class="orientation columns "><?php echo $homepageText; ?></p>
     <?php endif; ?>
 
 
-    <div class="exhibit-list large-12 columns large-up-4">       
+    <div class="large-12 columns large-up-3">       
         <?php $exhibits = get_records('Exhibit'); ?>
         <?php foreach($exhibits as $exhibit): ?>
-            <div class="large-3 column column-block exhibit">
+            <div class="large-4 column column-block exhibit">
                     <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'home-exhibit circle'))): ?>
                         <?php echo $exhibitImage?>
                     <?php endif; ?>
 
-                <?php echo exhibit_builder_link_to_exhibit($exhibit,$exhibit->title, array('class' => 'home-exhibit-title')); ?>  
-
-                <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true, 'snippet' => 150))): ?>
-                <div class="description"><?php echo $exhibitDescription; ?></div>
-            <?php endif; ?>          
+                <?php echo exhibit_builder_link_to_exhibit($exhibit,$exhibit->title, array('class' => 'featured-title')); ?>          
             </div>
         <?php endforeach; ?>
     </div>

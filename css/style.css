@@ -112,7 +112,6 @@ img a {
     border-radius: 50%;
     display:block;
     margin:auto;
-    margin-bottom: 1rem;
     width:60%;
 }
 
@@ -425,9 +424,18 @@ footer {
 /** home content */
 
 .featured-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+.exhibit {
+    text-align:center;
+}
+
+@media screen and (max-width: 40em) {
+    .exhibit {
+        margin-bottom:3rem;
+    }
+}
 
 /*EXHIBIT STYLES*/
 
@@ -435,7 +443,7 @@ footer {
 
 .exhibit-row {
     border-top:1px solid #AAA3A2;
-    padding-top:1rem;
+    padding:1rem 0;
 }
 
 .exhibits.browse h2 {
