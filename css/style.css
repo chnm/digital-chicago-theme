@@ -337,9 +337,9 @@ footer {
   min-width:465px;
   background: url(../img/DC_logo_light.png) center top no-repeat;
 }*/
-.inner-logo {
+/*.inner-logo {
     width:75%;
-}
+}*/
 
 .home-link {
     padding: 1em 18px;
@@ -689,6 +689,23 @@ footer {
     width:75px;
     max-width:75px;*/
 
+}
+
+/*items show*/
+.items.show #dublin-core-title {
+  display:none;
+}
+
+.element-set {
+  margin-top:1rem;
+}
+
+.items.show h3 {
+  margin:0;
+}
+
+.items.show .element {
+  margin-bottom:1rem;
 }
 
 /* items search */
