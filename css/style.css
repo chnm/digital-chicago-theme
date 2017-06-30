@@ -10,6 +10,16 @@ p {
     line-height: inherit;
 }
 
+blockquote p {
+  margin-left: 1rem;
+  border-left: 20px solid #DCC67A;
+  background-color: #f9f5e7;
+  font-size: 2rem;
+  color: #C31330;
+  padding: 2rem;
+  float: right;
+}
+
 h1 {
     font-size:2.5rem;
     /*font-weight: 600;*/
@@ -18,7 +28,11 @@ h1 {
 }
 
 h2 {
-    font-size:2rem;
+    font-size:1.75rem;
+}
+
+h3 {
+  font-size:1.25rem;
 }
 
 hr {
@@ -35,17 +49,20 @@ hr.red-hr {
 
 @media screen and (min-width: 40em) {
     header {
+    padding-top:.5rem;
     padding-bottom: 1rem;
   }
 }
 
 header {
-    padding-bottom:10rem;
-    background:linear-gradient(180deg, #AAA3A2 0px, #AAA3A2 83px, #f7f7f7);
+    padding-top:2rem;
+    padding-bottom:5rem;
+    background:linear-gradient(180deg, #AAA3A2, #f7f7f7);
 }
 
 #home header {
     text-align:center;
+    padding-bottom:10rem;
 }
 
 .home-logo {
@@ -95,7 +112,7 @@ img a {
     text-align: center;
     font-size:2rem;
     font-weight:bold;
-    margin-top:2.5rem;
+/*    margin-top:2.5rem;*/
     margin-bottom:2.5rem;
     line-height: 1.2;
 }
@@ -130,7 +147,7 @@ img a {
 
 #content {
     padding-top:1rem;
-    margin-top:-9rem;
+    margin-top:-2rem;
 }
 
 #home #content {
@@ -292,6 +309,7 @@ footer {
     float:left;
 }
 
+
 #primary-nav .menu>li>a {
     color:#fff;
     font-size:1.25rem;
@@ -360,15 +378,19 @@ footer {
 /*HOMEPAGE*/
 
 /**home header**/
+#home #primary-nav {
+  padding-top: 1.5rem;
+}
 
 #home #primary-nav li {
     padding:0;
-    padding-right:.5rem;
+    padding-right:1.5rem;
+    padding-left:1.5rem;
 }
 
 
 #home #primary-nav a {
-    width:210px;
+    width:150px;
 }
 
 #home #primary-nav .nav-item > a {
@@ -477,7 +499,7 @@ footer {
 
 }
 
-.hTagcloud ul li a, .items.browse .tags a {
+.hTagcloud ul li a {
     height:100px;
     width:100px;
     max-width:100px;
@@ -486,8 +508,18 @@ footer {
     text-align: center;
     background:#C31330;
     color:#fff;
-    border-radius: 50%;
-    word-wrap: break-word;
+/*    border-radius: 50%;*/
+/*    word-wrap: break-word;
+    padding:.7rem 1.5rem;*/
+}
+
+.items.browse .tags a {
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background:#C31330;
+    color:#fff;
+    padding:.5rem 1rem;
 }
 
 .hTagcloud ul li a:hover, .items.browse .tags a:hover {
@@ -557,6 +589,10 @@ footer {
 
 #related-exhibits a:hover {
     background-color: #DCC67A;
+}
+
+.exhibit-item-caption p {
+  line-height: 1.1rem;
 }
 
 /*ABOUT PAGE*/

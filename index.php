@@ -39,14 +39,14 @@
 
             
 
-            <img class="home-logo" src="<?php echo img('dc_logo_lfc_long.png', $dir='img'); ?>" alt="Logo for Digital Chicago">
+            <img class="home-logo" src="<?php echo img('DC_long_logo.png', $dir='img'); ?>" alt="Logo for Digital Chicago">
 
 
             <div id="primary-nav" role="navigation" class="row menu-centered">
                 <?php 
                     $navArray = array();
                     $navArray[] = array('label' => 'About', 'uri' => url('about'), 'class' => 'about nav-item');
-                    $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits'), 'class' => 'exhibits nav-item');
+                    $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits?sort_field=random'), 'class' => 'exhibits nav-item');
                 ?>
                 <?php
                     echo nav($navArray)->addPageClassToLi()->setUlClass('vertical medium-horizontal menu');
@@ -60,21 +60,22 @@
 
 
 <div id="primary">
-
+    <?php /* ?>
     <?php if ($homepageText = get_theme_option('Homepage Text')): ?>
         <p class="orientation columns "><?php echo $homepageText; ?></p>
     <?php endif; ?>
+    */ ?>
 
 
     <div class="large-12 columns large-up-3">       
-        <?php $exhibits = get_records('Exhibit'); ?>
+        <?php $exhibits = get_records('Exhibit', array('sort_field'=>'random')); ?>
         <?php foreach($exhibits as $exhibit): ?>
             <div class="large-4 column column-block exhibit">
                     <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'home-exhibit circle'))): ?>
-                        <?php echo $exhibitImage?>
+                        <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage); ?>
                     <?php endif; ?>
 
-                <?php echo exhibit_builder_link_to_exhibit($exhibit,$exhibit->title, array('class' => 'featured-title')); ?>          
+                <?php //echo exhibit_builder_link_to_exhibit($exhibit,$exhibit->title, array('class' => 'featured-title')); ?>          
             </div>
         <?php endforeach; ?>
     </div>

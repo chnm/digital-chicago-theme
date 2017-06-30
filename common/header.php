@@ -43,8 +43,8 @@
             </div>
 
              <div id="primary-nav" class="row" role="navigation" class="top-bar">
-                 <div class="top-bar-left ">
-                   <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('dc_logo_lfc_long.png', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
+                 <div class="top-bar-left large-5">
+                   <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('DC_long_logo.png', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
                    <a href="<?php echo url(''); ?>" class="show-for-small-only home-link">Home</a>
                 </div>
 
@@ -52,7 +52,7 @@
                     <?php 
                         $navArray = array();
                         $navArray[] = array('label' => 'About', 'uri' => url('about'), 'class' => 'about nav-item');
-                        $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits'), 'class' => 'exhibits nav-item');
+                        $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits?sort_field=random'), 'class' => 'exhibits nav-item');
                                             ?>
                     <?php echo nav($navArray)->addPageClassToLi()->setUlClass('vertical medium-horizontal menu large-5 column')->setUlId('right-nav'); ?>
                  
