@@ -580,6 +580,8 @@ footer {
     background-color: #C31330;
     padding: 5px 10px;
     text-align: center;
+    margin-bottom:5px;
+    display:inline-block;
 }
 
 #related-exhibits a:hover {
