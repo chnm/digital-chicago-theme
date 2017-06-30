@@ -1,13 +1,8 @@
 /*GENERIC*/
 body {
   font: 16px "Muli", sans-serif;
-  line-height: 32px;
   color: #2a2a2a;
   background: #f7f7f7;
-}
-
-p {
-    line-height: inherit;
 }
 
 blockquote p {
@@ -472,7 +467,7 @@ footer {
 
 .exhibit-row {
     border-top:1px solid #AAA3A2;
-    padding:1rem 0;
+    padding:2rem 0;
 }
 
 .exhibits.browse h2 {
@@ -589,6 +584,10 @@ footer {
 
 #related-exhibits a:hover {
     background-color: #DCC67A;
+}
+
+.exhibits.show #exhibit-blocks img {
+  padding-top:7px;
 }
 
 .exhibit-item-caption p {
