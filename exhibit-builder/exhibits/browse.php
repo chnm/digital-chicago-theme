@@ -2,9 +2,9 @@
 $title = __('Browse Exhibits');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
-<p class="orientation large-10 large-offset-1 columns">Explore our exhibits. <span class="show-for-medium">Use the tags below to filter them by subject</span></p>
+<p class="orientation large-10 large-offset-1 columns">Explore our exhibits. <span class="show-for-medium">Use the tags below to filter them by subject.</span></p>
 
-<div class="tag-cloud align-spaced show-for-medium">
+<div class="tag-cloud align-spaced show-for-medium column">
 <?php $tags = get_records('Tag', array('type'=>'exhibit' )); ?>
 <?php echo classed_tag_cloud($tags, 'exhibits/browse'); ?>
 </div>

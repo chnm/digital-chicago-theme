@@ -5,11 +5,15 @@ body {
   background: #f7f7f7;
 }
 
+.left {
+  float:left;
+}
+
 blockquote p {
   margin-left: 1rem;
   border-left: 20px solid #DCC67A;
   background-color: #f9f5e7;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #C31330;
   padding: 2rem;
   float: right;
@@ -55,6 +59,25 @@ header {
     background:linear-gradient(180deg, #AAA3A2, #f7f7f7);
 }
 
+@media screen and (max-width: 39.9375em) {
+  header {
+    padding-top:0;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #primary-nav .menu {
+    margin-left: 8.33333%;
+  }
+}
+
+
+@media screen and (min-width: 64em) {
+  #home #primary-nav .menu {
+    margin:0;
+  }
+}
+
 #home header {
     text-align:center;
     padding-bottom:10rem;
@@ -83,7 +106,7 @@ header {
 }
 
 @media screen and (max-width: 63.9375em) {
-    .column, .columns {
+    #content .column, .columns {
         padding-left:2rem;
         padding-right:2rem;
     }
@@ -146,7 +169,7 @@ img a {
 }
 
 #home #content {
-    margin-top:-8rem;
+    margin-top:-8.75rem;
 }
 
 
@@ -156,8 +179,13 @@ footer {
     padding:1rem 0;
 }
 
+#custom-footer-text {
+  padding-left:.5rem;
+}
+
 .footer-logo {
     float:left;
+    margin-right:10px;
 }
 
 #skipnav {
@@ -332,9 +360,21 @@ footer {
   min-width:465px;
   background: url(../img/DC_logo_light.png) center top no-repeat;
 }*/
-/*.inner-logo {
-    width:75%;
-}*/
+.inner-logo {
+    width:100%;
+}
+
+#inner-logo-wrap {
+  padding-top:10px;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #inner-logo-wrap {
+    margin-bottom:1rem;
+    }
+  }
+}
+
 
 .home-link {
     padding: 1em 18px;
@@ -373,6 +413,11 @@ footer {
 /*HOMEPAGE*/
 
 /**home header**/
+@media screen and (max-width: 63.9375em) {
+  #home header {
+    padding-top:10px;
+  }
+}
 #home #primary-nav {
   padding-top: 1.5rem;
 }
@@ -442,9 +487,6 @@ footer {
     }
 }
 
-
-
-
 /** home content */
 
 .featured-title {
@@ -470,8 +512,18 @@ footer {
     padding:2rem 0;
 }
 
+.exhibit-row:first-of-type {
+  border:none;
+}
+
 .exhibits.browse h2 {
     font-size:1.25rem;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .exhibits.browse h2 {
+    margin-top:.5rem;
+  }
 }
 
 /* tag cloud */
@@ -495,9 +547,8 @@ footer {
 }
 
 .hTagcloud ul li a {
-    height:100px;
-    width:100px;
-    max-width:100px;
+    min-width: 100px;
+    white-space: nowrap;
     display:table-cell;
     vertical-align: middle;
     text-align: center;
@@ -506,6 +557,13 @@ footer {
 /*    border-radius: 50%;*/
 /*    word-wrap: break-word;
     padding:.7rem 1.5rem;*/
+}
+
+.items.tags .hTagcloud li a {
+  padding: .7rem 1rem;
+  float:left;
+  margin-right:.5rem;
+  margin-bottom:.5rem;
 }
 
 .items.browse .tags a {
@@ -546,7 +604,11 @@ footer {
     margin:0;
     margin-bottom:.35rem;
 }
-
+@media screen and (max-width: 63.9375em) {
+  .sticky {
+        position: initial !important;
+    }
+}
 #exhibit-pages ul {
     list-style:none;
     margin:0;
@@ -604,7 +666,11 @@ footer {
 
 /*ITEM PAGES*/
 /*item browse*/
-
+@media screen and (max-width: 63.9375em) {
+  .items.browse h2 {
+    margin-top:.5rem;
+  }
+}
 .items-nav li.active{
     font-weight:bold;
 }

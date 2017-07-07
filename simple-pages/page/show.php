@@ -19,7 +19,7 @@ echo head(array(
     ?>
 </div>
 
-<div class="large-3 column">
+<div class="large-3 column show-for-large">
 <nav data-sticky-container>
   <div data-sticky data-margin-top="2" data-anchor="primary">
     <ul class="menu vertical">

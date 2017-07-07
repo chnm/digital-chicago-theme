@@ -4,15 +4,15 @@ echo head(array(
     'bodyclass' => 'exhibits show'));
 ?>
 
-<div id="exhibit-blocks" class="large-9 column">
+<div id="exhibit-blocks" class="large-9 medium-12 column">
 <h1><span class="exhibit-page"><?php echo metadata('exhibit', 'title'); ?></span></h1>
 
 <h2><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h2>
 <?php exhibit_builder_render_exhibit_page(); ?>
 </div>
 
-<div data-sticky-container class="large-3 column" id="sidebar-wrap">
-<div data-sticky data-anchor="exhibit-blocks" id="sidebar">
+<div data-sticky-container class="large-3 medium-12 column" id="sidebar-wrap">
+<div data-sticky data-anchor="exhibit-blocks" id="sidebar" class="sticky">
     <div data-margin-top="2">
         <h5>Table of Contents</h5>
         <nav id="exhibit-pages">

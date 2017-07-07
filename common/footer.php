@@ -3,10 +3,9 @@
 <footer role="contentinfo" class="row">
 
     <div id="footer-content" class="center-div">
-        <div class="footer-logo large-1 column">
-            <img src="<?php echo img('DC_logo_light.png', $dir='img'); ?>" alt="Logo for Digital Chicago">
-        </div>
-        <div class="footer-text large-7 column">
+
+        <div class="footer-text large-8 column">
+            <img class="large-1 show-for-large footer-logo" src="<?php echo img('DC_logo_light.png', $dir='img'); ?>" alt="Logo for Digital Chicago">
             <?php if($footerText = get_theme_option('Footer Text')): ?>
             <div id="custom-footer-text">
                 <p><?php echo get_theme_option('Footer Text'); ?></p>
@@ -15,8 +14,9 @@
         </div>
 
         <div class="logos large-4 column">
-            <a href="http://www.lakeforest.edu/"><img class="large-3 small-6 column float-right" src="<?php echo img('logo@2x.png', $dir='img'); ?>" alt="Logo for Lake Forest College"></a>
-            <a href="https://mellon.org/"><img class="large-5 small-6 column float-right" src="<?php echo img('mellon-logo.svg', $dir='img'); ?>" alt="Logo for the Mellon Foundation"></a>
+            <img class="small-4 hide-for-large column" src="<?php echo img('DC_logo_light.png', $dir='img'); ?>" alt="Logo for Digital Chicago">
+            <a href="http://www.lakeforest.edu/"><img class="large-3 small-4 column float-right" src="<?php echo img('logo@2x.png', $dir='img'); ?>" alt="Logo for Lake Forest College"></a>
+            <a href="https://mellon.org/"><img class="large-5 small-4 column float-right" src="<?php echo img('mellon-logo.svg', $dir='img'); ?>" alt="Logo for the Mellon Foundation"></a>
         </div>
 
 

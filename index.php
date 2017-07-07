@@ -39,7 +39,7 @@
 
             
 
-            <img class="home-logo" src="<?php echo img('DC_long_logo.png', $dir='img'); ?>" alt="Logo for Digital Chicago">
+            <img class="home-logo small-10" src="<?php echo img('DCLogo.svg', $dir='img'); ?>" alt="Logo for Digital Chicago">
 
 
             <div id="primary-nav" role="navigation" class="row menu-centered">
@@ -67,7 +67,7 @@
     */ ?>
 
 
-    <div class="large-12 columns large-up-3">       
+    <div class="large-12 columns large-up-3 medium-up-2">       
         <?php $exhibits = get_records('Exhibit', array('sort_field'=>'random')); ?>
         <?php foreach($exhibits as $exhibit): ?>
             <div class="large-4 column column-block exhibit">

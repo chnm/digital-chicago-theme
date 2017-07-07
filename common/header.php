@@ -42,22 +42,27 @@
                 <div class="title-bar-title">Menu</div>
             </div>
 
-             <div id="primary-nav" class="row" role="navigation" class="top-bar">
-                 <div class="top-bar-left large-5">
-                   <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('DC_long_logo.png', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
-                   <a href="<?php echo url(''); ?>" class="show-for-small-only home-link">Home</a>
+            <div id="inner-logo-wrap" class="small-12 column show-for-small-only">
+                <a href="<?php echo url(''); ?>"><img class="inner-logo" src="<?php echo img('DCLogo.svg', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
+            </div>
+            
+            <div class="nav-wrap row">
+                
+             <div id="primary-nav" class="medium-12 column" role="navigation" class="top-bar">
+                 <div class="top-bar-left medium-5">
+                   <a href="<?php echo url(''); ?>" class="show-for-medium"><img class="inner-logo" src="<?php echo img('DCLogo.svg', $dir='img'); ?>" alt="Logo for Digital Chicago"></a>
                 </div>
 
-                <div class="top-bar-right">  
+                <div class="top-bar-right medium-7">  
                     <?php 
                         $navArray = array();
                         $navArray[] = array('label' => 'About', 'uri' => url('about'), 'class' => 'about nav-item');
                         $navArray[] = array('label' => 'Explore', 'uri' => url('exhibits?sort_field=random'), 'class' => 'exhibits nav-item');
                                             ?>
-                    <?php echo nav($navArray)->addPageClassToLi()->setUlClass('vertical medium-horizontal menu large-5 column')->setUlId('right-nav'); ?>
+                    <?php echo nav($navArray)->addPageClassToLi()->setUlClass('vertical medium-horizontal menu medium-5 large-4 large-offset-1 column')->setUlId('right-nav'); ?>
                  
 
-                    <div id="search-container" role="search" class="large-7 column right align-self-bottom">
+                    <div id="search-container" role="search" class="medium-7 column right align-self-bottom">
                         <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                         <?php echo search_form(array('show_advanced' => true)); ?>
                         <?php else: ?>
@@ -65,6 +70,7 @@
                         <?php endif; ?>
                     </div>
                 </div>  
+            </div>
             </div>
         </header>
 
