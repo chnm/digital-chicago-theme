@@ -105,12 +105,12 @@ header {
   }
 }
 
-@media screen and (max-width: 63.9375em) {
-    #content .column, .columns {
+/*@media screen and (max-width: 63.9375em) {
+    #content .column, #content .columns {
         padding-left:2rem;
         padding-right:2rem;
     }
-}
+}*/
 
 /* -- Links -- */
 a:link, a:visited {
@@ -560,7 +560,7 @@ footer {
 }
 
 .items.tags .hTagcloud li a {
-  padding: .7rem 1rem;
+  padding: 0 1rem;
   float:left;
   margin-right:.5rem;
   margin-bottom:.5rem;

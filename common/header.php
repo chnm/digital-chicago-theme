@@ -74,6 +74,6 @@
             </div>
         </header>
 
-    <div id="content" class="row" role="main">
+    <div id="content" class="row column" role="main">
 
 <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
