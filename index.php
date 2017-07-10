@@ -68,7 +68,7 @@
 
 
     <div class="large-12 columns large-up-3 medium-up-2">       
-        <?php $exhibits = get_records('Exhibit', array('featured'=>true, 'sort_field'=>'random')); ?>
+        <?php $exhibits = get_records('Exhibit', array('sort_field'=>'random')); ?>
         <?php foreach($exhibits as $exhibit): ?>
             <div class="large-4 column column-block exhibit">
                     <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'home-exhibit circle'))): ?>
