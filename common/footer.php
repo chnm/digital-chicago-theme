@@ -18,7 +18,11 @@
             <a href="http://www.lakeforest.edu/"><img class="large-3 small-4 column float-right" src="<?php echo img('logo@2x.png', $dir='img'); ?>" alt="Logo for Lake Forest College"></a>
             <a href="https://mellon.org/"><img class="large-5 small-4 column float-right" src="<?php echo img('mellon-logo.svg', $dir='img'); ?>" alt="Logo for the Mellon Foundation"></a>
         </div>
-
+        <div class="social-media large-2 large-offset-10 medium-3 medium-offset-9 small-12 column">
+            <a href="https://twitter.com/digital_chicago"><i class="fa sm-icon fa-twitter"></i></a>
+            <a href="https://www.instagram.com/digitalchicago/"><i class="fa sm-icon fa-instagram"></i></a>
+            <a href="https://www.facebook.com/LFCDigitalChicago"><i class="fa sm-icon fa-facebook"></i></a>
+        </div>
 
     </div><!-- end footer-content -->
 

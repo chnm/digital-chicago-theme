@@ -564,9 +564,16 @@ footer {
   float:left;
   margin-right:.5rem;
   margin-bottom:.5rem;
+  border-radius: 500px;
+  /*background: linear-gradient(#C31330, #742432 95%)*/
 }
 
-.items.browse .tags a {
+.items.tags .hTagcloud li a:hover {
+  background: #DCC67A;
+  text-decoration:none;
+}
+
+/*.items.browse .tags a {
     display:table-cell;
     vertical-align: middle;
     text-align: center;
@@ -578,7 +585,7 @@ footer {
 .hTagcloud ul li a:hover, .items.browse .tags a:hover {
     text-decoration: none;
     background:#DCC67A;
-}
+}*/
 
 /** exhibits show **/
 
@@ -821,4 +828,47 @@ select {
 body.search td img {
     border-radius: 50%;
     max-width: 166px;
+}
+
+/*Social Media Icons*/
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social-media {
+  margin-top:1rem;
+}
+
+.sm-icon {
+  font-size: 1.5em;
+  color:#AAA3A2;
+  margin-right:1rem;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .sm-icon {
+    float:right
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .sm-icon {
+    float:right
+  }
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
 }
