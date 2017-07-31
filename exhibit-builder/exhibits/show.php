@@ -5,7 +5,7 @@ echo head(array(
 ?>
 
 <div id="exhibit-blocks" class="large-9 medium-12 column">
-<h1><span class="exhibit-page"><?php echo metadata('exhibit', 'title'); ?></span></h1>
+<h1><span class="exhibit-page"><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></span></h1>
 
 <h2><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h2>
 <?php exhibit_builder_render_exhibit_page(); ?>

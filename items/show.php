@@ -7,7 +7,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show'));
 
 <?php if (metadata('item', 'has files')): ?>
 <div id="itemfiles" class="element">
-    <div class="element-text"><?php echo files_for_item(array('imageSize'=>'fullsize')); ?></div>
+    <?php echo item_image_gallery(array('wrapper' => array('class' =>'row small-up-2 medium-up-3 large-up-4'), 'linkWrapper' => array('class' => 'column column-block'))); ?>
 </div>
 <?php endif; ?>
 

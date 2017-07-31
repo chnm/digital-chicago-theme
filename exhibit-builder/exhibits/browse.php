@@ -6,7 +6,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 
 <div class="tag-cloud align-spaced show-for-medium column">
 <?php $tags = get_records('Tag', array('type'=>'exhibit' )); ?>
-<?php echo classed_tag_cloud($tags, 'exhibits/browse'); ?>
+<?php echo tag_cloud($tags, 'exhibits/browse'); ?>
 </div>
 <div class="exhibits">
     <?php if (count($exhibits) > 0): ?>

@@ -71,9 +71,19 @@
         <?php $exhibits = get_records('Exhibit', array('sort_field'=>'random')); ?>
         <?php foreach($exhibits as $exhibit): ?>
             <div class="large-4 column column-block exhibit">
-                    <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail', array('class' => 'home-exhibit circle'))): ?>
-                        <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage); ?>
+                <div class="circle-wrap">
+                    <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail')): ?>
+                        <?php echo $exhibitImage; ?>
+                        <div class="info">
+                            <?php if ($exhibitImageID = $exhibit->cover_image_file_id): ?>
+                                <?php $coverFile = get_record_by_id('File', $exhibitImageID); ?>
+                                <a href="<?php echo exhibit_builder_exhibit_uri($exhibit); ?>"><?php echo metadata($coverFile, 'display_title'); ?></a>
+                            <?php endif; ?>
+                        </div>
                     <?php endif; ?>
+
+                </div>
+
 
                 <?php //echo exhibit_builder_link_to_exhibit($exhibit,$exhibit->title, array('class' => 'featured-title')); ?>          
             </div>
