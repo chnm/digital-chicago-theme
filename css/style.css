@@ -9,6 +9,10 @@ body {
   float:left;
 }
 
+.row {
+  max-width: 95%;
+}
+
 blockquote p {
   margin-left: 1rem;
   border-left: 20px solid #DCC67A;
