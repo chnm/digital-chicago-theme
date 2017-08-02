@@ -10,7 +10,7 @@ body {
 }
 
 .row {
-  max-width: 95%;
+  max-width: 90%;
 }
 
 blockquote p {
@@ -536,6 +536,7 @@ footer {
 .circle-wrap a {
   font-size:2rem;
   font-variant: small-caps;
+  font-weight:bold;
   text-align: center;
   color:#fff;
   text-decoration: none;
