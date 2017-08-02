@@ -77,7 +77,7 @@
                         <div class="info">
                             <?php if ($exhibitImageID = $exhibit->cover_image_file_id): ?>
                                 <?php $coverFile = get_record_by_id('File', $exhibitImageID); ?>
-                                <a href="<?php echo exhibit_builder_exhibit_uri($exhibit); ?>"><?php echo metadata($coverFile, 'display_title'); ?></a>
+                                <a href="<?php echo exhibit_builder_exhibit_uri($exhibit); ?>"><?php echo metadata($coverFile, array('Dublin Core','Title')); ?></a>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
