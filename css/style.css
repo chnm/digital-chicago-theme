@@ -690,6 +690,7 @@ footer {
 #related-exhibits {
     margin-left:1em;
     padding-top:1rem;
+    overflow:hidden;
 }
 
 /*#related-exhibits a {
