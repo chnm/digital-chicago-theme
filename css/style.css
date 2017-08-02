@@ -135,7 +135,7 @@ img a {
     font-size:2rem;
     font-weight:bold;
 /*    margin-top:2.5rem;*/
-    margin-bottom:2.5rem;
+    /*margin-bottom:2.5rem;*/
     line-height: 1.2;
 }
 
@@ -570,6 +570,12 @@ footer {
 }
 
 /* tag cloud */
+.exhibits.browse .hTagcloud {
+  margin:0;
+  margin-bottom:1rem;
+  overflow:hidden;
+}
+
 .tag-cloud {
     clear:both;
 }
@@ -589,7 +595,7 @@ footer {
 
 }
 
-.hTagcloud ul li a, .items.browse .tags a {
+.hTagcloud ul li a, .items.browse .tags a, #related-exhibits a {
     min-width: 100px;
     white-space: nowrap;
     display:table-cell;
@@ -602,7 +608,7 @@ footer {
     padding:.7rem 1.5rem;*/
 }
 
-.items.tags .hTagcloud li a, .exhibits.browse .hTagcloud li a, .items.browse .tags a  {
+.items.tags .hTagcloud li a, .exhibits.browse .hTagcloud li a, .items.browse .tags a, #related-exhibits a  {
   padding: 0 1rem;
   float:left;
   margin-right:.5rem;
@@ -611,7 +617,7 @@ footer {
   /*background: linear-gradient(#C31330, #742432 95%)*/
 }
 
-.items.tags .hTagcloud li a:hover, .exhibits.browse .hTagcloud li a:hover, .items.browse .tags a:hover {
+.items.tags .hTagcloud li a:hover, .exhibits.browse .hTagcloud li a:hover, .items.browse .tags a:hover, #related-exhibits a:hover {
   background: #DCC67A;
   text-decoration:none;
 }
@@ -686,7 +692,7 @@ footer {
     padding-top:1rem;
 }
 
-#related-exhibits a {
+/*#related-exhibits a {
     text-decoration: none;
     color: #fff;
     background-color: #C31330;
@@ -698,7 +704,7 @@ footer {
 
 #related-exhibits a:hover {
     background-color: #DCC67A;
-}
+}*/
 
 .exhibits.show #exhibit-blocks img {
   padding-top:7px;
