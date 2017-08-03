@@ -28,9 +28,13 @@ $searchRecordTypes = get_search_record_types();
                 <?php if ($recordImage = record_image($recordType)): ?>
                     <?php echo link_to($record, 'show', $recordImage, array('class' => 'image')); ?>
                 <?php endif; ?>
+                <br>
                 <a href="<?php echo record_url($record, 'show'); ?>"><?php echo $searchText['title'] ? $searchText['title'] : '[Unknown]'; ?></a>
                 <br />
-                <span class='search-description'><?php echo metadata($record, array('Dublin Core', 'Description')); ?></span>
+                <br>
+                <?php if ($recordType != 'Exhibit'): ?>
+                    <span class='search-description'><?php echo metadata($record, array('Dublin Core', 'Description')); ?></span>
+                <?php endif; ?>
             </td>
         </tr>
         <?php endforeach; ?>

@@ -497,7 +497,7 @@ footer {
     font-size: 1.3rem;
 }
 
-.exhibit {
+#home .exhibit {
     text-align:center;
     margin-bottom: 4rem;
 }
@@ -534,7 +534,7 @@ footer {
 }
 
 .circle-wrap a {
-  font-size:2rem;
+  font-size:2.75rem;
   font-variant: small-caps;
   font-weight:bold;
   text-align: center;
@@ -882,8 +882,18 @@ select {
 
 /*SEARCH RESULTS*/
 body.search td img {
+    float:left;
     border-radius: 50%;
     max-width: 166px;
+    margin:0 2rem;
+}
+
+body.search table tbody td {
+  padding:1rem .625rem;
+}
+
+.search-description {
+  padding-top:15rem;
 }
 
 /*Social Media Icons*/
