@@ -530,6 +530,7 @@ footer {
   position: relative;
   display: inline-block;
   border-radius: 50%;
+  -webkit-border-radius:50%;
   overflow: hidden;
   z-index:1;
 }
