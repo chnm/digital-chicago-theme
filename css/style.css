@@ -522,6 +522,7 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
+  z-index: 0;
 }
 
 .circle-wrap {
@@ -541,6 +542,7 @@ footer {
   color:#fff;
   text-decoration: none;
   margin:auto;
+
 }
 
 .circle-wrap img:hover + .info, .info:hover {
