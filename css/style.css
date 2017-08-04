@@ -518,7 +518,6 @@ footer {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  -webkit-transform: translateZ(0px);
   -webkit-transition: .5s ease;
   background-color: #4E4C4C;
   display: flex;
