@@ -542,7 +542,7 @@ footer {
   color:#fff;
   text-decoration: none;
   margin:auto;
-
+  z-index:0;
 }
 
 .circle-wrap img:hover + .info, .info:hover {
