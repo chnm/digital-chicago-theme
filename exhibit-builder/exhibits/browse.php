@@ -23,7 +23,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
             <div class="large-9 column">
                 <h2><?php echo link_to_exhibit(); ?></h2>
             
-                <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true, 'snippet' => 300))): ?>
+                <?php if ($exhibitDescription = metadata($exhibit, 'description', array('no_escape' => true, 'snippet' => 400))): ?>
                     <div class="description"><?php echo $exhibitDescription; ?></div>
                 <?php endif; ?>
             </div>
