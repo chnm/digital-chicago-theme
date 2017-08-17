@@ -545,6 +545,7 @@ footer {
   text-decoration: none;
   margin:auto;
   padding:0 .5rem;
+  line-height:2.75rem;
   z-index:0;
 }
 
