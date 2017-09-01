@@ -682,21 +682,23 @@ footer {
     margin:0;
 }
 
-#exhibit-pages li {
-    padding: .35em 18px;
+#exhibit-pages a {
+    padding: .35em 1rem;
     line-height:1.35;
+    display: block;
 }
 
-#exhibit-pages li.current {
+#exhibit-pages li.current > a {
     background:#DCC67A;
-}
-
-#exhibit-pages li.current a {
     color:#fff;
 }
 
 #exhibit-pages a {
     text-decoration: none;
+}
+
+#exhibit-pages li > ul {
+    padding-left: 1rem;
 }
 
 #related-exhibits {
