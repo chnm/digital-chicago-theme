@@ -21,7 +21,7 @@ echo head(array(
 
         <div id="related-exhibits">
             <?php if ($exhibitTags = tag_string('exhibit', 'exhibits', ' ')): ?>
-                <h5>Related Projects</h5>
+                <h5>Related projects</h5>
                 <p class="tags"><?php echo $exhibitTags; ?></p>
             <?php endif; ?>
         </div>
